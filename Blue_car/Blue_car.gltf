@@ -6,8 +6,7 @@
 	"extensionsUsed":[
 		"KHR_draco_mesh_compression",
 		"KHR_materials_emissive_strength",
-		"KHR_materials_specular",
-		"KHR_materials_ior"
+		"KHR_materials_specular"
 	],
 	"extensionsRequired":[
 		"KHR_draco_mesh_compression"
@@ -2253,25 +2252,23 @@
 		},
 		{
 			"doubleSided":true,
-			"extensions":{
-				"KHR_materials_specular":{
-					"specularColorFactor":[
-						2.0,
-						2.0,
-						2.0
-					]
-				},
-				"KHR_materials_ior":{
-					"ior":1.2000000476837158
-				}
+			"name":"Glossy Sky Blue Paint",
+			"normalTexture":{
+				"index":0,
+				"texCoord":1
 			},
-			"name":"blue",
 			"pbrMetallicRoughness":{
-				"baseColorTexture":{
-					"index":0
-				},
-				"metallicFactor":0.10000000149011612,
-				"roughnessFactor":0.10000000149011612
+				"baseColorFactor":[
+					0.019381482154130936,
+					0.2536395788192749,
+					0.7083761096000671,
+					1
+				],
+				"metallicFactor":0,
+				"metallicRoughnessTexture":{
+					"index":1,
+					"texCoord":1
+				}
 			}
 		},
 		{
@@ -2770,9 +2767,9 @@
 			"name":"\u8f66\u8eab1\u9ed1\u8272.001",
 			"pbrMetallicRoughness":{
 				"baseColorFactor":[
-					0.023652322590351105,
-					0.023652322590351105,
-					0.023652322590351105,
+					0,
+					0,
+					0,
 					1
 				]
 			}
@@ -3999,7 +3996,8 @@
 					"attributes":{
 						"POSITION":184,
 						"NORMAL":185,
-						"TEXCOORD_0":186
+						"TEXCOORD_0":186,
+						"TEXCOORD_1":187
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4007,11 +4005,12 @@
 							"attributes":{
 								"POSITION":0,
 								"NORMAL":1,
-								"TEXCOORD_0":2
+								"TEXCOORD_0":2,
+								"TEXCOORD_1":3
 							}
 						}
 					},
-					"indices":187,
+					"indices":188,
 					"material":3,
 					"mode":4
 				}
@@ -4022,9 +4021,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":188,
-						"NORMAL":189,
-						"TEXCOORD_0":190
+						"POSITION":189,
+						"NORMAL":190,
+						"TEXCOORD_0":191
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4036,7 +4035,7 @@
 							}
 						}
 					},
-					"indices":191,
+					"indices":192,
 					"material":4,
 					"mode":4
 				}
@@ -4047,9 +4046,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":192,
-						"NORMAL":193,
-						"TEXCOORD_0":194
+						"POSITION":193,
+						"NORMAL":194,
+						"TEXCOORD_0":195
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4061,7 +4060,7 @@
 							}
 						}
 					},
-					"indices":195,
+					"indices":196,
 					"material":5,
 					"mode":4
 				}
@@ -4072,8 +4071,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":196,
-						"NORMAL":197
+						"POSITION":197,
+						"NORMAL":198
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4084,7 +4083,7 @@
 							}
 						}
 					},
-					"indices":198,
+					"indices":199,
 					"material":6,
 					"mode":4
 				}
@@ -4095,8 +4094,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":199,
-						"NORMAL":200
+						"POSITION":200,
+						"NORMAL":201
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4107,7 +4106,7 @@
 							}
 						}
 					},
-					"indices":201,
+					"indices":202,
 					"material":7,
 					"mode":4
 				}
@@ -4118,8 +4117,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":202,
-						"NORMAL":203
+						"POSITION":203,
+						"NORMAL":204
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4130,7 +4129,7 @@
 							}
 						}
 					},
-					"indices":204,
+					"indices":205,
 					"material":8,
 					"mode":4
 				}
@@ -4141,8 +4140,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":205,
-						"NORMAL":206
+						"POSITION":206,
+						"NORMAL":207
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4153,7 +4152,7 @@
 							}
 						}
 					},
-					"indices":207,
+					"indices":208,
 					"material":9,
 					"mode":4
 				}
@@ -4164,8 +4163,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":208,
-						"NORMAL":209
+						"POSITION":209,
+						"NORMAL":210
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4176,7 +4175,7 @@
 							}
 						}
 					},
-					"indices":210,
+					"indices":211,
 					"material":8,
 					"mode":4
 				}
@@ -4187,8 +4186,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":211,
-						"NORMAL":212
+						"POSITION":212,
+						"NORMAL":213
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4199,7 +4198,7 @@
 							}
 						}
 					},
-					"indices":213,
+					"indices":214,
 					"material":10,
 					"mode":4
 				}
@@ -4210,8 +4209,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":214,
-						"NORMAL":215
+						"POSITION":215,
+						"NORMAL":216
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4222,7 +4221,7 @@
 							}
 						}
 					},
-					"indices":216,
+					"indices":217,
 					"material":11,
 					"mode":4
 				}
@@ -4233,8 +4232,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":217,
-						"NORMAL":218
+						"POSITION":218,
+						"NORMAL":219
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4245,7 +4244,7 @@
 							}
 						}
 					},
-					"indices":219,
+					"indices":220,
 					"material":12,
 					"mode":4
 				}
@@ -4256,8 +4255,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":220,
-						"NORMAL":221
+						"POSITION":221,
+						"NORMAL":222
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4268,7 +4267,7 @@
 							}
 						}
 					},
-					"indices":222,
+					"indices":223,
 					"material":9,
 					"mode":4
 				}
@@ -4279,8 +4278,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":223,
-						"NORMAL":224
+						"POSITION":224,
+						"NORMAL":225
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4291,7 +4290,7 @@
 							}
 						}
 					},
-					"indices":225,
+					"indices":226,
 					"material":9,
 					"mode":4
 				}
@@ -4302,9 +4301,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":226,
-						"NORMAL":227,
-						"TEXCOORD_0":228
+						"POSITION":227,
+						"NORMAL":228,
+						"TEXCOORD_0":229
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4316,7 +4315,7 @@
 							}
 						}
 					},
-					"indices":229,
+					"indices":230,
 					"material":12,
 					"mode":4
 				}
@@ -4327,8 +4326,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":230,
-						"NORMAL":231
+						"POSITION":231,
+						"NORMAL":232
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4339,7 +4338,7 @@
 							}
 						}
 					},
-					"indices":232,
+					"indices":233,
 					"material":9,
 					"mode":4
 				}
@@ -4350,8 +4349,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":233,
-						"NORMAL":234
+						"POSITION":234,
+						"NORMAL":235
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4362,7 +4361,7 @@
 							}
 						}
 					},
-					"indices":235,
+					"indices":236,
 					"material":13,
 					"mode":4
 				}
@@ -4373,9 +4372,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":236,
-						"NORMAL":237,
-						"TEXCOORD_0":238
+						"POSITION":237,
+						"NORMAL":238,
+						"TEXCOORD_0":239
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4387,7 +4386,7 @@
 							}
 						}
 					},
-					"indices":239,
+					"indices":240,
 					"material":12,
 					"mode":4
 				}
@@ -4398,8 +4397,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":240,
-						"NORMAL":241
+						"POSITION":241,
+						"NORMAL":242
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4410,7 +4409,7 @@
 							}
 						}
 					},
-					"indices":242,
+					"indices":243,
 					"material":8,
 					"mode":4
 				}
@@ -4421,8 +4420,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":243,
-						"NORMAL":244
+						"POSITION":244,
+						"NORMAL":245
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4433,7 +4432,7 @@
 							}
 						}
 					},
-					"indices":245,
+					"indices":246,
 					"material":9,
 					"mode":4
 				}
@@ -4444,9 +4443,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":246,
-						"NORMAL":247,
-						"TEXCOORD_0":248
+						"POSITION":247,
+						"NORMAL":248,
+						"TEXCOORD_0":249
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4458,7 +4457,7 @@
 							}
 						}
 					},
-					"indices":249,
+					"indices":250,
 					"material":11,
 					"mode":4
 				}
@@ -4469,8 +4468,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":250,
-						"NORMAL":251
+						"POSITION":251,
+						"NORMAL":252
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4481,7 +4480,7 @@
 							}
 						}
 					},
-					"indices":252,
+					"indices":253,
 					"material":8,
 					"mode":4
 				}
@@ -4492,8 +4491,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":253,
-						"NORMAL":254
+						"POSITION":254,
+						"NORMAL":255
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4504,7 +4503,7 @@
 							}
 						}
 					},
-					"indices":255,
+					"indices":256,
 					"material":13,
 					"mode":4
 				}
@@ -4515,8 +4514,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":256,
-						"NORMAL":257
+						"POSITION":257,
+						"NORMAL":258
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4527,7 +4526,7 @@
 							}
 						}
 					},
-					"indices":258,
+					"indices":259,
 					"material":14,
 					"mode":4
 				}
@@ -4538,8 +4537,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":259,
-						"NORMAL":260
+						"POSITION":260,
+						"NORMAL":261
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4550,7 +4549,7 @@
 							}
 						}
 					},
-					"indices":261,
+					"indices":262,
 					"material":15,
 					"mode":4
 				}
@@ -4561,8 +4560,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":262,
-						"NORMAL":263
+						"POSITION":263,
+						"NORMAL":264
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4573,7 +4572,7 @@
 							}
 						}
 					},
-					"indices":264,
+					"indices":265,
 					"material":16,
 					"mode":4
 				}
@@ -4584,8 +4583,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":265,
-						"NORMAL":266
+						"POSITION":266,
+						"NORMAL":267
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4596,7 +4595,7 @@
 							}
 						}
 					},
-					"indices":267,
+					"indices":268,
 					"material":12,
 					"mode":4
 				}
@@ -4607,8 +4606,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":268,
-						"NORMAL":269
+						"POSITION":269,
+						"NORMAL":270
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4619,7 +4618,7 @@
 							}
 						}
 					},
-					"indices":270,
+					"indices":271,
 					"material":17,
 					"mode":4
 				}
@@ -4630,8 +4629,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":271,
-						"NORMAL":272
+						"POSITION":272,
+						"NORMAL":273
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4642,7 +4641,7 @@
 							}
 						}
 					},
-					"indices":273,
+					"indices":274,
 					"material":18,
 					"mode":4
 				}
@@ -4653,8 +4652,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":274,
-						"NORMAL":275
+						"POSITION":275,
+						"NORMAL":276
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4665,7 +4664,7 @@
 							}
 						}
 					},
-					"indices":276,
+					"indices":277,
 					"material":9,
 					"mode":4
 				}
@@ -4676,8 +4675,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":277,
-						"NORMAL":278
+						"POSITION":278,
+						"NORMAL":279
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4688,7 +4687,7 @@
 							}
 						}
 					},
-					"indices":279,
+					"indices":280,
 					"material":9,
 					"mode":4
 				}
@@ -4699,8 +4698,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":280,
-						"NORMAL":281
+						"POSITION":281,
+						"NORMAL":282
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4711,7 +4710,7 @@
 							}
 						}
 					},
-					"indices":282,
+					"indices":283,
 					"material":9,
 					"mode":4
 				}
@@ -4722,8 +4721,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":283,
-						"NORMAL":284
+						"POSITION":284,
+						"NORMAL":285
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4734,7 +4733,7 @@
 							}
 						}
 					},
-					"indices":285,
+					"indices":286,
 					"material":19,
 					"mode":4
 				}
@@ -4745,8 +4744,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":286,
-						"NORMAL":287
+						"POSITION":287,
+						"NORMAL":288
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4757,7 +4756,7 @@
 							}
 						}
 					},
-					"indices":288,
+					"indices":289,
 					"material":11,
 					"mode":4
 				}
@@ -4768,8 +4767,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":289,
-						"NORMAL":290
+						"POSITION":290,
+						"NORMAL":291
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4780,7 +4779,7 @@
 							}
 						}
 					},
-					"indices":291,
+					"indices":292,
 					"material":15,
 					"mode":4
 				}
@@ -4791,8 +4790,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":292,
-						"NORMAL":293
+						"POSITION":293,
+						"NORMAL":294
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4803,7 +4802,7 @@
 							}
 						}
 					},
-					"indices":294,
+					"indices":295,
 					"material":11,
 					"mode":4
 				}
@@ -4814,8 +4813,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":295,
-						"NORMAL":296
+						"POSITION":296,
+						"NORMAL":297
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4826,7 +4825,7 @@
 							}
 						}
 					},
-					"indices":297,
+					"indices":298,
 					"material":20,
 					"mode":4
 				}
@@ -4837,8 +4836,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":298,
-						"NORMAL":299
+						"POSITION":299,
+						"NORMAL":300
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4849,7 +4848,7 @@
 							}
 						}
 					},
-					"indices":300,
+					"indices":301,
 					"material":16,
 					"mode":4
 				}
@@ -4860,8 +4859,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":301,
-						"NORMAL":302
+						"POSITION":302,
+						"NORMAL":303
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4872,7 +4871,7 @@
 							}
 						}
 					},
-					"indices":303,
+					"indices":304,
 					"material":12,
 					"mode":4
 				}
@@ -4883,8 +4882,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":304,
-						"NORMAL":305
+						"POSITION":305,
+						"NORMAL":306
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4895,7 +4894,7 @@
 							}
 						}
 					},
-					"indices":306,
+					"indices":307,
 					"material":12,
 					"mode":4
 				}
@@ -4906,8 +4905,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":307,
-						"NORMAL":308
+						"POSITION":308,
+						"NORMAL":309
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4918,7 +4917,7 @@
 							}
 						}
 					},
-					"indices":309,
+					"indices":310,
 					"material":14,
 					"mode":4
 				}
@@ -4929,8 +4928,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":310,
-						"NORMAL":311
+						"POSITION":311,
+						"NORMAL":312
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4941,7 +4940,7 @@
 							}
 						}
 					},
-					"indices":312,
+					"indices":313,
 					"material":14,
 					"mode":4
 				}
@@ -4952,8 +4951,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":313,
-						"NORMAL":314
+						"POSITION":314,
+						"NORMAL":315
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4964,7 +4963,7 @@
 							}
 						}
 					},
-					"indices":315,
+					"indices":316,
 					"material":12,
 					"mode":4
 				}
@@ -4975,8 +4974,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":316,
-						"NORMAL":317
+						"POSITION":317,
+						"NORMAL":318
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -4987,7 +4986,7 @@
 							}
 						}
 					},
-					"indices":318,
+					"indices":319,
 					"material":11,
 					"mode":4
 				}
@@ -4998,8 +4997,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":319,
-						"NORMAL":320
+						"POSITION":320,
+						"NORMAL":321
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5010,7 +5009,7 @@
 							}
 						}
 					},
-					"indices":321,
+					"indices":322,
 					"material":12,
 					"mode":4
 				}
@@ -5021,8 +5020,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":322,
-						"NORMAL":323
+						"POSITION":323,
+						"NORMAL":324
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5033,7 +5032,7 @@
 							}
 						}
 					},
-					"indices":324,
+					"indices":325,
 					"material":9,
 					"mode":4
 				}
@@ -5044,8 +5043,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":325,
-						"NORMAL":326
+						"POSITION":326,
+						"NORMAL":327
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5056,7 +5055,7 @@
 							}
 						}
 					},
-					"indices":327,
+					"indices":328,
 					"material":8,
 					"mode":4
 				}
@@ -5067,8 +5066,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":328,
-						"NORMAL":329
+						"POSITION":329,
+						"NORMAL":330
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5079,7 +5078,7 @@
 							}
 						}
 					},
-					"indices":330,
+					"indices":331,
 					"material":8,
 					"mode":4
 				}
@@ -5090,8 +5089,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":331,
-						"NORMAL":332
+						"POSITION":332,
+						"NORMAL":333
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5102,7 +5101,7 @@
 							}
 						}
 					},
-					"indices":333,
+					"indices":334,
 					"material":8,
 					"mode":4
 				}
@@ -5113,8 +5112,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":334,
-						"NORMAL":335
+						"POSITION":335,
+						"NORMAL":336
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5125,7 +5124,7 @@
 							}
 						}
 					},
-					"indices":336,
+					"indices":337,
 					"material":8,
 					"mode":4
 				}
@@ -5136,8 +5135,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":337,
-						"NORMAL":338
+						"POSITION":338,
+						"NORMAL":339
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5148,7 +5147,7 @@
 							}
 						}
 					},
-					"indices":339,
+					"indices":340,
 					"material":8,
 					"mode":4
 				}
@@ -5159,8 +5158,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":340,
-						"NORMAL":341
+						"POSITION":341,
+						"NORMAL":342
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5171,7 +5170,7 @@
 							}
 						}
 					},
-					"indices":342,
+					"indices":343,
 					"material":8,
 					"mode":4
 				}
@@ -5182,8 +5181,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":343,
-						"NORMAL":344
+						"POSITION":344,
+						"NORMAL":345
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5194,7 +5193,7 @@
 							}
 						}
 					},
-					"indices":345,
+					"indices":346,
 					"material":9,
 					"mode":4
 				}
@@ -5205,8 +5204,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":346,
-						"NORMAL":347
+						"POSITION":347,
+						"NORMAL":348
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5217,7 +5216,7 @@
 							}
 						}
 					},
-					"indices":348,
+					"indices":349,
 					"material":16,
 					"mode":4
 				}
@@ -5228,8 +5227,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":349,
-						"NORMAL":350
+						"POSITION":350,
+						"NORMAL":351
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5240,7 +5239,7 @@
 							}
 						}
 					},
-					"indices":351,
+					"indices":352,
 					"material":21,
 					"mode":4
 				}
@@ -5251,8 +5250,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":352,
-						"NORMAL":353
+						"POSITION":353,
+						"NORMAL":354
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5263,7 +5262,7 @@
 							}
 						}
 					},
-					"indices":354,
+					"indices":355,
 					"material":8,
 					"mode":4
 				}
@@ -5274,8 +5273,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":355,
-						"NORMAL":356
+						"POSITION":356,
+						"NORMAL":357
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5286,7 +5285,7 @@
 							}
 						}
 					},
-					"indices":357,
+					"indices":358,
 					"material":14,
 					"mode":4
 				}
@@ -5297,8 +5296,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":358,
-						"NORMAL":359
+						"POSITION":359,
+						"NORMAL":360
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5309,7 +5308,7 @@
 							}
 						}
 					},
-					"indices":360,
+					"indices":361,
 					"material":22,
 					"mode":4
 				}
@@ -5320,8 +5319,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":361,
-						"NORMAL":362
+						"POSITION":362,
+						"NORMAL":363
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5332,7 +5331,7 @@
 							}
 						}
 					},
-					"indices":363,
+					"indices":364,
 					"material":8,
 					"mode":4
 				}
@@ -5343,8 +5342,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":364,
-						"NORMAL":365
+						"POSITION":365,
+						"NORMAL":366
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5355,7 +5354,7 @@
 							}
 						}
 					},
-					"indices":366,
+					"indices":367,
 					"material":8,
 					"mode":4
 				}
@@ -5366,8 +5365,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":367,
-						"NORMAL":368
+						"POSITION":368,
+						"NORMAL":369
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5378,7 +5377,7 @@
 							}
 						}
 					},
-					"indices":369,
+					"indices":370,
 					"material":11,
 					"mode":4
 				}
@@ -5389,9 +5388,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":370,
-						"NORMAL":371,
-						"TEXCOORD_0":372
+						"POSITION":371,
+						"NORMAL":372,
+						"TEXCOORD_0":373
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5403,7 +5402,7 @@
 							}
 						}
 					},
-					"indices":373,
+					"indices":374,
 					"material":11,
 					"mode":4
 				}
@@ -5414,9 +5413,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":374,
-						"NORMAL":375,
-						"TEXCOORD_0":376
+						"POSITION":375,
+						"NORMAL":376,
+						"TEXCOORD_0":377
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5428,7 +5427,7 @@
 							}
 						}
 					},
-					"indices":377,
+					"indices":378,
 					"material":23,
 					"mode":4
 				}
@@ -5439,9 +5438,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":378,
-						"NORMAL":379,
-						"TEXCOORD_0":380
+						"POSITION":379,
+						"NORMAL":380,
+						"TEXCOORD_0":381
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5453,7 +5452,7 @@
 							}
 						}
 					},
-					"indices":381,
+					"indices":382,
 					"material":23,
 					"mode":4
 				}
@@ -5464,9 +5463,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":382,
-						"NORMAL":383,
-						"TEXCOORD_0":384
+						"POSITION":383,
+						"NORMAL":384,
+						"TEXCOORD_0":385
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5478,7 +5477,7 @@
 							}
 						}
 					},
-					"indices":385,
+					"indices":386,
 					"material":23,
 					"mode":4
 				}
@@ -5489,9 +5488,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":386,
-						"NORMAL":387,
-						"TEXCOORD_0":388
+						"POSITION":387,
+						"NORMAL":388,
+						"TEXCOORD_0":389
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5503,7 +5502,7 @@
 							}
 						}
 					},
-					"indices":389,
+					"indices":390,
 					"material":23,
 					"mode":4
 				}
@@ -5514,8 +5513,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":390,
-						"NORMAL":391
+						"POSITION":391,
+						"NORMAL":392
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5526,7 +5525,7 @@
 							}
 						}
 					},
-					"indices":392,
+					"indices":393,
 					"material":24,
 					"mode":4
 				}
@@ -5537,8 +5536,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":393,
-						"NORMAL":394
+						"POSITION":394,
+						"NORMAL":395
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5549,7 +5548,7 @@
 							}
 						}
 					},
-					"indices":395,
+					"indices":396,
 					"material":25,
 					"mode":4
 				}
@@ -5560,8 +5559,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":396,
-						"NORMAL":397
+						"POSITION":397,
+						"NORMAL":398
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5572,14 +5571,14 @@
 							}
 						}
 					},
-					"indices":398,
+					"indices":399,
 					"material":26,
 					"mode":4
 				},
 				{
 					"attributes":{
-						"POSITION":399,
-						"NORMAL":400
+						"POSITION":400,
+						"NORMAL":401
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5590,14 +5589,14 @@
 							}
 						}
 					},
-					"indices":401,
+					"indices":402,
 					"material":27,
 					"mode":4
 				},
 				{
 					"attributes":{
-						"POSITION":402,
-						"NORMAL":403
+						"POSITION":403,
+						"NORMAL":404
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5608,7 +5607,7 @@
 							}
 						}
 					},
-					"indices":404,
+					"indices":405,
 					"material":14,
 					"mode":4
 				}
@@ -5619,8 +5618,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":405,
-						"NORMAL":406
+						"POSITION":406,
+						"NORMAL":407
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5631,7 +5630,7 @@
 							}
 						}
 					},
-					"indices":407,
+					"indices":408,
 					"material":10,
 					"mode":4
 				}
@@ -5642,8 +5641,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":408,
-						"NORMAL":409
+						"POSITION":409,
+						"NORMAL":410
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5654,7 +5653,7 @@
 							}
 						}
 					},
-					"indices":410,
+					"indices":411,
 					"material":14,
 					"mode":4
 				}
@@ -5665,8 +5664,8 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":411,
-						"NORMAL":412
+						"POSITION":412,
+						"NORMAL":413
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5677,7 +5676,7 @@
 							}
 						}
 					},
-					"indices":413,
+					"indices":414,
 					"material":15,
 					"mode":4
 				}
@@ -5688,9 +5687,9 @@
 			"primitives":[
 				{
 					"attributes":{
-						"POSITION":414,
-						"NORMAL":415,
-						"TEXCOORD_0":416
+						"POSITION":415,
+						"NORMAL":416,
+						"TEXCOORD_0":417
 					},
 					"extensions":{
 						"KHR_draco_mesh_compression":{
@@ -5702,7 +5701,7 @@
 							}
 						}
 					},
-					"indices":417,
+					"indices":418,
 					"material":12,
 					"mode":4
 				}
@@ -5713,13 +5712,22 @@
 		{
 			"sampler":0,
 			"source":0
+		},
+		{
+			"sampler":0,
+			"source":1
 		}
 	],
 	"images":[
 		{
+			"mimeType":"image/jpeg",
+			"name":"Slate_blue_pattern_stripy_Normal",
+			"uri":"Textures/Slate_blue_pattern_stripy_Normal.jpg"
+		},
+		{
 			"mimeType":"image/png",
-			"name":"blue",
-			"uri":"Textures/blue.png"
+			"name":"Slate_blue_pattern_stripy_Roughness",
+			"uri":"Textures/Slate_blue_pattern_stripy_Roughness.png"
 		}
 	],
 	"accessors":[
@@ -7115,7 +7123,7 @@
 		},
 		{
 			"componentType":5126,
-			"count":1141450,
+			"count":1237126,
 			"max":[
 				339.6999206542969,
 				134.50704956054688,
@@ -7130,12 +7138,17 @@
 		},
 		{
 			"componentType":5126,
-			"count":1141450,
+			"count":1237126,
 			"type":"VEC3"
 		},
 		{
 			"componentType":5126,
-			"count":1141450,
+			"count":1237126,
+			"type":"VEC2"
+		},
+		{
+			"componentType":5126,
+			"count":1237126,
 			"type":"VEC2"
 		},
 		{
@@ -9262,373 +9275,373 @@
 		},
 		{
 			"buffer":0,
-			"byteLength":5451836,
+			"byteLength":7261096,
 			"byteOffset":168064
 		},
 		{
 			"buffer":0,
 			"byteLength":277597,
-			"byteOffset":5619900
+			"byteOffset":7429160
 		},
 		{
 			"buffer":0,
 			"byteLength":959100,
-			"byteOffset":5897500
+			"byteOffset":7706760
 		},
 		{
 			"buffer":0,
 			"byteLength":287886,
-			"byteOffset":6856600
+			"byteOffset":8665860
 		},
 		{
 			"buffer":0,
 			"byteLength":94713,
-			"byteOffset":7144488
+			"byteOffset":8953748
 		},
 		{
 			"buffer":0,
 			"byteLength":369802,
-			"byteOffset":7239204
+			"byteOffset":9048464
 		},
 		{
 			"buffer":0,
 			"byteLength":1192,
-			"byteOffset":7609008
+			"byteOffset":9418268
 		},
 		{
 			"buffer":0,
 			"byteLength":3378,
-			"byteOffset":7610200
+			"byteOffset":9419460
 		},
 		{
 			"buffer":0,
 			"byteLength":125104,
-			"byteOffset":7613580
+			"byteOffset":9422840
 		},
 		{
 			"buffer":0,
 			"byteLength":11569,
-			"byteOffset":7738684
+			"byteOffset":9547944
 		},
 		{
 			"buffer":0,
 			"byteLength":95329,
-			"byteOffset":7750256
+			"byteOffset":9559516
 		},
 		{
 			"buffer":0,
 			"byteLength":34233,
-			"byteOffset":7845588
+			"byteOffset":9654848
 		},
 		{
 			"buffer":0,
 			"byteLength":20373,
-			"byteOffset":7879824
+			"byteOffset":9689084
 		},
 		{
 			"buffer":0,
 			"byteLength":680690,
-			"byteOffset":7900200
+			"byteOffset":9709460
 		},
 		{
 			"buffer":0,
 			"byteLength":24034,
-			"byteOffset":8580892
+			"byteOffset":10390152
 		},
 		{
 			"buffer":0,
 			"byteLength":341030,
-			"byteOffset":8604928
+			"byteOffset":10414188
 		},
 		{
 			"buffer":0,
 			"byteLength":101212,
-			"byteOffset":8945960
+			"byteOffset":10755220
 		},
 		{
 			"buffer":0,
 			"byteLength":119311,
-			"byteOffset":9047172
+			"byteOffset":10856432
 		},
 		{
 			"buffer":0,
 			"byteLength":79064,
-			"byteOffset":9166484
+			"byteOffset":10975744
 		},
 		{
 			"buffer":0,
 			"byteLength":65255,
-			"byteOffset":9245548
+			"byteOffset":11054808
 		},
 		{
 			"buffer":0,
 			"byteLength":45572,
-			"byteOffset":9310804
+			"byteOffset":11120064
 		},
 		{
 			"buffer":0,
 			"byteLength":36093,
-			"byteOffset":9356376
+			"byteOffset":11165636
 		},
 		{
 			"buffer":0,
 			"byteLength":14286,
-			"byteOffset":9392472
+			"byteOffset":11201732
 		},
 		{
 			"buffer":0,
 			"byteLength":41474,
-			"byteOffset":9406760
+			"byteOffset":11216020
 		},
 		{
 			"buffer":0,
 			"byteLength":17885,
-			"byteOffset":9448236
+			"byteOffset":11257496
 		},
 		{
 			"buffer":0,
 			"byteLength":20558,
-			"byteOffset":9466124
+			"byteOffset":11275384
 		},
 		{
 			"buffer":0,
 			"byteLength":184648,
-			"byteOffset":9486684
+			"byteOffset":11295944
 		},
 		{
 			"buffer":0,
 			"byteLength":11174,
-			"byteOffset":9671332
+			"byteOffset":11480592
 		},
 		{
 			"buffer":0,
 			"byteLength":28833,
-			"byteOffset":9682508
+			"byteOffset":11491768
 		},
 		{
 			"buffer":0,
 			"byteLength":31031,
-			"byteOffset":9711344
+			"byteOffset":11520604
 		},
 		{
 			"buffer":0,
 			"byteLength":14307,
-			"byteOffset":9742376
+			"byteOffset":11551636
 		},
 		{
 			"buffer":0,
 			"byteLength":198692,
-			"byteOffset":9756684
+			"byteOffset":11565944
 		},
 		{
 			"buffer":0,
 			"byteLength":10904,
-			"byteOffset":9955376
+			"byteOffset":11764636
 		},
 		{
 			"buffer":0,
 			"byteLength":72762,
-			"byteOffset":9966280
+			"byteOffset":11775540
 		},
 		{
 			"buffer":0,
 			"byteLength":13867,
-			"byteOffset":10039044
+			"byteOffset":11848304
 		},
 		{
 			"buffer":0,
 			"byteLength":2476,
-			"byteOffset":10052912
+			"byteOffset":11862172
 		},
 		{
 			"buffer":0,
 			"byteLength":63549,
-			"byteOffset":10055388
+			"byteOffset":11864648
 		},
 		{
 			"buffer":0,
 			"byteLength":80972,
-			"byteOffset":10118940
+			"byteOffset":11928200
 		},
 		{
 			"buffer":0,
 			"byteLength":80411,
-			"byteOffset":10199912
+			"byteOffset":12009172
 		},
 		{
 			"buffer":0,
 			"byteLength":4329,
-			"byteOffset":10280324
+			"byteOffset":12089584
 		},
 		{
 			"buffer":0,
 			"byteLength":3228,
-			"byteOffset":10284656
+			"byteOffset":12093916
 		},
 		{
 			"buffer":0,
 			"byteLength":308478,
-			"byteOffset":10287884
+			"byteOffset":12097144
 		},
 		{
 			"buffer":0,
 			"byteLength":52948,
-			"byteOffset":10596364
+			"byteOffset":12405624
 		},
 		{
 			"buffer":0,
 			"byteLength":47909,
-			"byteOffset":10649312
+			"byteOffset":12458572
 		},
 		{
 			"buffer":0,
 			"byteLength":40813,
-			"byteOffset":10697224
+			"byteOffset":12506484
 		},
 		{
 			"buffer":0,
 			"byteLength":6138,
-			"byteOffset":10738040
+			"byteOffset":12547300
 		},
 		{
 			"buffer":0,
 			"byteLength":4644,
-			"byteOffset":10744180
+			"byteOffset":12553440
 		},
 		{
 			"buffer":0,
 			"byteLength":2204,
-			"byteOffset":10748824
+			"byteOffset":12558084
 		},
 		{
 			"buffer":0,
 			"byteLength":2608,
-			"byteOffset":10751028
+			"byteOffset":12560288
 		},
 		{
 			"buffer":0,
 			"byteLength":2156,
-			"byteOffset":10753636
+			"byteOffset":12562896
 		},
 		{
 			"buffer":0,
 			"byteLength":56642,
-			"byteOffset":10755792
+			"byteOffset":12565052
 		},
 		{
 			"buffer":0,
 			"byteLength":140002,
-			"byteOffset":10812436
+			"byteOffset":12621696
 		},
 		{
 			"buffer":0,
 			"byteLength":50815,
-			"byteOffset":10952440
+			"byteOffset":12761700
 		},
 		{
 			"buffer":0,
 			"byteLength":15214,
-			"byteOffset":11003256
+			"byteOffset":12812516
 		},
 		{
 			"buffer":0,
 			"byteLength":1157,
-			"byteOffset":11018472
+			"byteOffset":12827732
 		},
 		{
 			"buffer":0,
 			"byteLength":3388,
-			"byteOffset":11019632
+			"byteOffset":12828892
 		},
 		{
 			"buffer":0,
 			"byteLength":169,
-			"byteOffset":11023020
+			"byteOffset":12832280
 		},
 		{
 			"buffer":0,
 			"byteLength":1369,
-			"byteOffset":11023192
+			"byteOffset":12832452
 		},
 		{
 			"buffer":0,
 			"byteLength":1262,
-			"byteOffset":11024564
+			"byteOffset":12833824
 		},
 		{
 			"buffer":0,
 			"byteLength":323623,
-			"byteOffset":11025828
+			"byteOffset":12835088
 		},
 		{
 			"buffer":0,
 			"byteLength":26341,
-			"byteOffset":11349452
+			"byteOffset":13158712
 		},
 		{
 			"buffer":0,
 			"byteLength":1747,
-			"byteOffset":11375796
+			"byteOffset":13185056
 		},
 		{
 			"buffer":0,
 			"byteLength":976,
-			"byteOffset":11377544
+			"byteOffset":13186804
 		},
 		{
 			"buffer":0,
 			"byteLength":985,
-			"byteOffset":11378520
+			"byteOffset":13187780
 		},
 		{
 			"buffer":0,
 			"byteLength":3861,
-			"byteOffset":11379508
+			"byteOffset":13188768
 		},
 		{
 			"buffer":0,
 			"byteLength":906,
-			"byteOffset":11383372
+			"byteOffset":13192632
 		},
 		{
 			"buffer":0,
 			"byteLength":460005,
-			"byteOffset":11384280
+			"byteOffset":13193540
 		},
 		{
 			"buffer":0,
 			"byteLength":41531,
-			"byteOffset":11844288
+			"byteOffset":13653548
 		},
 		{
 			"buffer":0,
 			"byteLength":113019,
-			"byteOffset":11885820
+			"byteOffset":13695080
 		},
 		{
 			"buffer":0,
 			"byteLength":6198,
-			"byteOffset":11998840
+			"byteOffset":13808100
 		},
 		{
 			"buffer":0,
 			"byteLength":2515766,
-			"byteOffset":12005040
+			"byteOffset":13814300
 		},
 		{
 			"buffer":0,
 			"byteLength":47585,
-			"byteOffset":14520808
+			"byteOffset":16330068
 		},
 		{
 			"buffer":0,
 			"byteLength":14909,
-			"byteOffset":14568396
+			"byteOffset":16377656
 		},
 		{
 			"buffer":0,
 			"byteLength":254,
-			"byteOffset":14583308
+			"byteOffset":16392568
 		}
 	],
 	"samplers":[
@@ -9639,7 +9652,7 @@
 	],
 	"buffers":[
 		{
-			"byteLength":14583564,
+			"byteLength":16392824,
 			"uri":"Blue_car.bin"
 		}
 	]
