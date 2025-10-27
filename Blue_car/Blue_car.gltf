@@ -2258,15 +2258,13 @@
 				"texCoord":1
 			},
 			"pbrMetallicRoughness":{
-				"baseColorFactor":[
-					0.023578127846121788,
-					0.023124942556023598,
-					0.7085094451904297,
-					1
-				],
+				"baseColorTexture":{
+					"index":1,
+					"texCoord":1
+				},
 				"metallicFactor":0,
 				"metallicRoughnessTexture":{
-					"index":1,
+					"index":2,
 					"texCoord":1
 				}
 			}
@@ -5716,6 +5714,10 @@
 		{
 			"sampler":0,
 			"source":1
+		},
+		{
+			"sampler":0,
+			"source":2
 		}
 	],
 	"images":[
@@ -5723,6 +5725,11 @@
 			"mimeType":"image/jpeg",
 			"name":"Slate_blue_pattern_stripy_Normal",
 			"uri":"Textures/Slate_blue_pattern_stripy_Normal.jpg"
+		},
+		{
+			"mimeType":"image/png",
+			"name":"blue",
+			"uri":"Textures/blue.png"
 		},
 		{
 			"mimeType":"image/png",
