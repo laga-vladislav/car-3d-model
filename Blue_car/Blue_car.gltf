@@ -143,7 +143,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"\u9752\u82cd\u7eff.002",
+			"name":"\u9752\u82cd\u7eff",
 			"rotation":[
 				0,
 				0,
@@ -2194,7 +2194,6 @@
 				"baseColorTexture":{
 					"index":0
 				},
-				"metallicFactor":0,
 				"metallicRoughnessTexture":{
 					"index":1
 				}
@@ -2812,7 +2811,7 @@
 	],
 	"meshes":[
 		{
-			"name":"cheshen5shenlvse.002",
+			"name":"cheshen5shenlvse.003",
 			"primitives":[
 				{
 					"attributes":{
