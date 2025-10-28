@@ -143,7 +143,7 @@
 	"nodes":[
 		{
 			"mesh":0,
-			"name":"\u9752\u82cd\u7eff",
+			"name":"\u58a8\u8131\u7eff.001",
 			"rotation":[
 				0,
 				0,
@@ -2189,11 +2189,12 @@
 					"ior":1.2000000476837158
 				}
 			},
-			"name":"cheshen5shenlvse.002",
+			"name":"cheshen5shenlvse.001",
 			"pbrMetallicRoughness":{
 				"baseColorTexture":{
 					"index":0
 				},
+				"metallicFactor":0,
 				"metallicRoughnessTexture":{
 					"index":1
 				}
@@ -2811,7 +2812,7 @@
 	],
 	"meshes":[
 		{
-			"name":"cheshen5shenlvse.003",
+			"name":"cheshen3molvse.001",
 			"primitives":[
 				{
 					"attributes":{
@@ -5707,12 +5708,12 @@
 	"images":[
 		{
 			"mimeType":"image/png",
-			"name":"base color",
-			"uri":"Textures/base%20color.png"
+			"name":"base color.png",
+			"uri":"Textures/base%20color_png.png"
 		},
 		{
 			"mimeType":"image/png",
-			"name":"roughness.png",
+			"name":"roughness_png",
 			"uri":"Textures/roughness_png.png"
 		}
 	],
